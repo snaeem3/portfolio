@@ -2,6 +2,7 @@ import { projects } from '../projectData';
 
 const Projects = () => (
   <section className="projects">
+    <h2 className="section-header">Projects</h2>
     <ul>
       {projects.map((project) => (
         <li>
