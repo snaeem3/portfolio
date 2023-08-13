@@ -1,3 +1,5 @@
+import { skills } from '../skills';
+
 const About = () => (
   <section className="about">
     <h2 className="section-header">About Me</h2>
@@ -15,7 +17,17 @@ const About = () => (
         engineering teams.
       </p>
     </div>
-    <div className="skills-container" />
+    <div className="skills-container">
+      <h3 className="skills-header">Skills</h3>
+      <ul>
+        {skills.map((skill) => (
+          <li>
+            <p>{skill.name}</p>
+            <img src={skill.src} alt={skill.name} className="dev-logo" />
+          </li>
+        ))}
+      </ul>
+    </div>
   </section>
 );
 
