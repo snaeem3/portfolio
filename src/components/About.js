@@ -1,7 +1,7 @@
 import { skills } from '../skills';
 
 const About = () => (
-  <section className="about">
+  <section className="about-container">
     <h2 className="section-header">About Me</h2>
     <div className="about-content">
       <p>
@@ -19,11 +19,11 @@ const About = () => (
     </div>
     <div className="skills-container">
       <h3 className="skills-header">Skills</h3>
-      <ul>
+      <ul className="skills-list">
         {skills.map((skill) => (
-          <li>
-            <p>{skill.name}</p>
+          <li className="skill">
             <img src={skill.src} alt={skill.name} className="dev-logo" />
+            <p>{skill.name}</p>
           </li>
         ))}
       </ul>

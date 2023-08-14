@@ -11,6 +11,7 @@ const Projects = () => (
             description={project.description}
             github={project.github}
             live={project.live}
+            screenshotSrc={project.screenshotSrc}
           />
         </li>
       ))}
@@ -19,12 +20,19 @@ const Projects = () => (
 );
 
 const Project = (props) => {
-  const { name, description, github, live } = props;
+  const { name, description, github, live, screenshotSrc } = props;
+  console.log(screenshotSrc);
 
   return (
     <div className="project">
       <h3>{name}</h3>
+      <img src={screenshotSrc} alt={name} className="screenshot" />
       <p>{description}</p>
+      <button type="button">
+        <a href={live} target="_blank" rel="noopener noreferrer">
+          Live Demo
+        </a>
+      </button>
     </div>
   );
 };

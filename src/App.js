@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import Nav from './components/Nav';
 import Title from './components/Title';
 import About from './components/About';
