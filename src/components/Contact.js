@@ -1,6 +1,30 @@
+import githubIcon from '../assets/iconmonstr-github-1.svg';
+import emailIcon from '../assets/mail_FILL0_wght400_GRAD0_opsz48.svg';
+
 const Contact = () => (
   <section className="Contact">
     <h2 className="section-header">Contact</h2>
+    <ul className="contact-icons">
+      <li>
+        <a
+          href="https://github.com/snaeem3"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={githubIcon} alt="github icon" className="icon" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="mailto:sameer4363@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={emailIcon} alt="email icon" className="icon" />
+        </a>
+      </li>
+      {/* <li>LinkedIn</li> */}
+    </ul>
     <div className="contact-status">
       I am currently seeking a position as either a front end, back end, or full
       stack web developer. If you're interested in learning more about either me
@@ -10,6 +34,7 @@ const Contact = () => (
       target="_blank"
       action="https://formsubmit.co/sameer4363@gmail.com"
       method="POST"
+      className="contact-form"
     >
       <div className="form-group">
         <div className="form-row">
@@ -48,7 +73,7 @@ const Contact = () => (
           required
         />
       </div>
-      <button type="submit" className="btn btn-lg btn-dark btn-block">
+      <button type="submit" className="icon-btn">
         Submit Form
       </button>
     </form>

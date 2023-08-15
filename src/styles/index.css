@@ -82,6 +82,22 @@ button:not(:disabled):hover {
   margin-left: 0.5rem;
 }
 
+.icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon-btn::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
 .hidden {
   display: none;
 }
@@ -216,4 +232,39 @@ section {
 .project .screenshot {
   width: 100%;
   object-fit: contain;
+}
+
+.live-btn::after {
+  background-image: url(/src/assets/open_in_new_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.github-btn::after {
+  background-image: url(/src/assets/iconmonstr-github-1.svg);
+}
+
+button[type="submit"]::after {
+  background-image: url(/src/assets/send_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.contact-form {
+  padding: var(--section-padding);
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-default);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form button {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }
