@@ -1,7 +1,7 @@
 import { skills } from '../skills';
 
 const About = () => (
-  <section className="about-container">
+  <section className="about-container" id="about">
     <h2 className="section-header">About Me</h2>
     <div className="about-content">
       <p>

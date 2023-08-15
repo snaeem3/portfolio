@@ -178,6 +178,7 @@ header h1 {
 nav {
   padding: var(--section-padding);
   font-size: 1.5rem;
+  background: var(--primary-color);
 }
 
 nav ul {

@@ -2,7 +2,7 @@ import githubIcon from '../assets/iconmonstr-github-1.svg';
 import emailIcon from '../assets/mail_FILL0_wght400_GRAD0_opsz48.svg';
 
 const Contact = () => (
-  <section className="Contact">
+  <section className="Contact" id="contact">
     <h2 className="section-header">Contact</h2>
     <ul className="contact-icons">
       <li>
@@ -74,7 +74,7 @@ const Contact = () => (
         />
       </div>
       <button type="submit" className="icon-btn">
-        Submit Form
+        Submit
       </button>
     </form>
   </section>

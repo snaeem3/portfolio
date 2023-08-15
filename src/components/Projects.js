@@ -2,7 +2,7 @@ import { projects } from '../projectData';
 import githubLogo from '../assets/iconmonstr-github-1.svg';
 
 const Projects = () => (
-  <section className="projects">
+  <section className="projects" id="projects">
     <h2 className="section-header">Projects</h2>
     <ul>
       {projects.map((project) => (
