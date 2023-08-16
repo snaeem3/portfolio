@@ -17,6 +17,11 @@ function App() {
         {/* <Resume/> */}
         <Contact />
       </main>
+      <a href="#nav">
+        <button type="button" className="icon-btn return-to-top-btn">
+          Return to Top
+        </button>
+      </a>
     </div>
   );
 }

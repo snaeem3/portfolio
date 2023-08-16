@@ -7,8 +7,8 @@ const About = () => (
       <p>
         I'm a versatile engineer on the East Coast of the United States. I've
         cultivated problem-solving skills since 2014 through various programming
-        projects. My journey began with Matlab and has evolved into web
-        development and beyond.
+        projects. My journey began with Matlab and has evolved into{' '}
+        <strong>web development</strong> and beyond.
       </p>
       <p>
         Armed with a robust foundation in mechanical engineering and a growing

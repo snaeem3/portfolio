@@ -1,24 +1,38 @@
+import { useState } from 'react';
 import { projects } from '../projectData';
 import githubLogo from '../assets/iconmonstr-github-1.svg';
 
-const Projects = () => (
-  <section className="projects" id="projects">
-    <h2 className="section-header">Projects</h2>
-    <ul>
-      {projects.map((project) => (
-        <li>
-          <Project
-            name={project.name}
-            description={project.description}
-            github={project.github}
-            live={project.live}
-            screenshotSrc={project.screenshotSrc}
-          />
-        </li>
-      ))}
-    </ul>
-  </section>
-);
+const Projects = () => {
+  const [showAllProjects, setShowAllProjects] = useState(projects.length <= 3);
+
+  return (
+    <section className="projects" id="projects">
+      <h2 className="section-header">Projects</h2>
+      <ul>
+        {projects.slice(0, showAllProjects ? undefined : 3).map((project) => (
+          <li>
+            <Project
+              name={project.name}
+              description={project.description}
+              github={project.github}
+              live={project.live}
+              screenshotSrc={project.screenshotSrc}
+            />
+          </li>
+        ))}
+      </ul>
+      {!showAllProjects ? (
+        <button
+          type="button"
+          className="show-more-btn icon-btn"
+          onClick={(e) => setShowAllProjects(true)}
+        >
+          View More Projects
+        </button>
+      ) : null}
+    </section>
+  );
+};
 
 const Project = (props) => {
   const { name, description, github, live, screenshotSrc } = props;

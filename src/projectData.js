@@ -1,6 +1,7 @@
 import photoTaggingScreenshot from './assets/screenshots/photo-tagging-screenshot.png';
 import shoppingCartScreenshot from './assets/screenshots/shopping-cart-screenshot.png';
 import battleshipScreenshot from './assets/screenshots/battleship-screenshot.png';
+import cvScreenshot from './assets/screenshots/cv-screenshot.png';
 
 export const projects = [
   {
@@ -26,4 +27,16 @@ export const projects = [
     live: 'https://snaeem3.github.io/battleship/',
     screenshotSrc: battleshipScreenshot,
   },
+  {
+    name: 'CV Maker',
+    description: 'A resume building application built with React',
+    github: 'https://github.com/snaeem3/cv-project',
+    live: 'https://snaeem3.github.io/cv-project/',
+    screenshotSrc: cvScreenshot,
+  },
+  // {
+  //   name: 'Automated Tennis Ball Launcher',
+  //   description:
+  //     'A custom designed, built, and programmed tennis ball launcher utilizing an MSP 432 Microcontroller and MATLAB Vision system. Winner of Fall 2017 Georgia Tech Mechatronics Competition.',
+  // },
 ];

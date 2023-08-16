@@ -1,5 +1,5 @@
 const Nav = () => (
-  <nav>
+  <nav id="nav">
     <ul>
       <li>
         <a href="#about">About</a>

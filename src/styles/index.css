@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"); */
 
 :root {
   --section-padding: 1rem;
@@ -199,6 +198,8 @@ nav a:hover {
 
 section {
   padding: var(--section-padding);
+  margin: var(--section-margin);
+  border-bottom: solid 1px var(--color-shadow);
 }
 
 .title-container {
@@ -243,8 +244,22 @@ section {
   background-image: url(/src/assets/iconmonstr-github-1.svg);
 }
 
+.show-more-btn::after {
+  background-image: url(/src/assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
 button[type="submit"]::after {
   background-image: url(/src/assets/send_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.return-to-top-btn::after {
+  background-image: url(/src/assets/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg);
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .contact-form {
@@ -268,4 +283,9 @@ button[type="submit"]::after {
 .col {
   display: flex;
   flex-direction: column;
+}
+
+.App > a {
+  align-self: center;
+  margin: var(--section-margin);
 }
