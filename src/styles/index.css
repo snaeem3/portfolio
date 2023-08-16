@@ -202,17 +202,50 @@ section {
   border-bottom: solid 1px var(--color-shadow);
 }
 
+.section-header {
+  text-align: center;
+}
+
 .title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem var(--section-padding);
+}
+
+.name {
+  font-size: 5rem;
+}
+
+.position-name {
+  font-size: 2.5rem;
 }
 
 .about-container {
   padding: var(--section-padding);
 }
 
+.about-content {
+  padding: var(--section-padding) 0;
+}
+
+.about-content p {
+  margin-bottom: 0.5rem;
+}
+
+.skills-container {
+  text-align: center;
+  padding: var(--section-padding);
+  border: solid 2px var(--primary-color);
+  border-radius: var(--border-radius-default);
+}
+
+.skills-header {
+  border-bottom: solid 1px black;
+}
+
 .skills-list {
+  margin-top: var(--section-margin);
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
@@ -220,6 +253,9 @@ section {
 
 .skill {
   padding: 0.5rem;
+}
+
+.projects {
   text-align: center;
 }
 
@@ -228,7 +264,16 @@ section {
   border: solid 2px var(--primary-color);
   border-radius: var(--border-radius-default);
   padding: var(--section-padding);
+  margin: var(--section-margin) 0;
   text-align: center;
+}
+
+.project > * {
+  margin: 0.5rem 0;
+}
+
+.project button {
+  margin: 0.25rem 0;
 }
 
 .project .screenshot {
@@ -260,6 +305,10 @@ button[type="submit"]::after {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.contact-status {
+  padding: var(--section-padding);
 }
 
 .contact-form {

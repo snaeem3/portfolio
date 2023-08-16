@@ -18,7 +18,7 @@ const About = () => (
       </p>
     </div>
     <div className="skills-container">
-      <h3 className="skills-header">Skills</h3>
+      <h2 className="skills-header">Skills</h2>
       <ul className="skills-list">
         {skills.map((skill) => (
           <li className="skill">

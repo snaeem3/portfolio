@@ -39,7 +39,7 @@ const Project = (props) => {
   console.log(screenshotSrc);
 
   return (
-    <div className="project">
+    <div className="project box-shadow">
       <h3>{name}</h3>
       <img src={screenshotSrc} alt={name} className="screenshot" />
       <p>{description}</p>
