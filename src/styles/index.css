@@ -98,7 +98,17 @@ button:not(:disabled):hover {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show,
+.in-view {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .sticky-element {
@@ -204,6 +214,7 @@ section {
 
 .section-header {
   text-align: center;
+  font-size: 2rem;
 }
 
 .title-container {
@@ -266,6 +277,10 @@ section {
   padding: var(--section-padding);
   margin: var(--section-margin) 0;
   text-align: center;
+}
+
+.project h3 {
+  font-size: 1.5rem;
 }
 
 .project > * {

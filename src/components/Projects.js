@@ -1,25 +1,47 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { projects } from '../projectData';
 import githubLogo from '../assets/iconmonstr-github-1.svg';
 
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(projects.length <= 3);
 
+  const liRef = useRef([]);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        // entry.target.classList.remove('in-view');
+      }
+    });
+  };
+
+  useEffect(() => {
+    const newLiElements = liRef.current.slice(liRef.current.length - 3); // Assuming 3 is the initial count
+    newLiElements.forEach((li) => {
+      const observer = new IntersectionObserver(handleIntersection);
+      observer.observe(li);
+    });
+  }, [liRef.current.length]);
+
   return (
     <section className="projects" id="projects">
       <h2 className="section-header">Projects</h2>
       <ul>
-        {projects.slice(0, showAllProjects ? undefined : 3).map((project) => (
-          <li>
-            <Project
-              name={project.name}
-              description={project.description}
-              github={project.github}
-              live={project.live}
-              screenshotSrc={project.screenshotSrc}
-            />
-          </li>
-        ))}
+        {projects
+          .slice(0, showAllProjects ? undefined : 3)
+          .map((project, index) => (
+            <li ref={(el) => liRef.current.push(el)} className="hidden">
+              <Project
+                name={project.name}
+                description={project.description}
+                github={project.github}
+                live={project.live}
+                screenshotSrc={project.screenshotSrc}
+              />
+            </li>
+          ))}
       </ul>
       {!showAllProjects ? (
         <button
@@ -36,7 +58,6 @@ const Projects = () => {
 
 const Project = (props) => {
   const { name, description, github, live, screenshotSrc } = props;
-  console.log(screenshotSrc);
 
   return (
     <div className="project box-shadow">
