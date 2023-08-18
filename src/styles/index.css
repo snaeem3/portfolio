@@ -169,6 +169,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.root {
+  max-width: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -230,6 +234,22 @@ section {
 
 .position-name {
   font-size: 2.5rem;
+}
+
+.blinking-cursor {
+  animation: 1200ms blink infinite;
+}
+
+@keyframes blink {
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  25%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .about-container {
