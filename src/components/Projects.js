@@ -19,8 +19,17 @@ const Projects = () => {
 
   useEffect(() => {
     const newLiElements = liRef.current.slice(liRef.current.length - 3); // Assuming 3 is the initial count
+    const observerOptions = {
+      root: null, // null uses the view port
+      rootMargin: '0px',
+      // threshold: 0.05,
+    };
+
     newLiElements.forEach((li) => {
-      const observer = new IntersectionObserver(handleIntersection);
+      const observer = new IntersectionObserver(
+        handleIntersection,
+        observerOptions
+      );
       observer.observe(li);
     });
   }, [liRef.current.length]);
@@ -62,18 +71,22 @@ const Project = (props) => {
   return (
     <div className="project box-shadow">
       <h3>{name}</h3>
-      <img src={screenshotSrc} alt={name} className="screenshot" />
-      <p>{description}</p>
-      <a href={live} target="_blank" rel="noopener noreferrer">
-        <button type="button" className="live-btn icon-btn">
-          Live Demo
-        </button>
-      </a>
-      <a href={github} target="_blank" rel="noopener noreferrer">
-        <button type="button" className="github-btn icon-btn">
-          Repository
-        </button>
-      </a>
+      <div className="project-content">
+        <img src={screenshotSrc} alt={name} className="screenshot" />
+        <p>{description}</p>
+        <div className="link-container">
+          <a href={live} target="_blank" rel="noopener noreferrer">
+            <button type="button" className="live-btn icon-btn">
+              Live Demo
+            </button>
+          </a>
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <button type="button" className="github-btn icon-btn">
+              Repository
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

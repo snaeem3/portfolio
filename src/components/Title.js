@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 const Title = () => {
   const initialText = 'Mechanical Engineer';
-  const pauseMs = 2000;
+  const pauseMs = 2500;
   const finalText = 'Web Developer';
-  const typingSpeedMs = 100;
+  const typingSpeedMs = 125;
   const deleteSpeedMs = 50; // Lower is faster
 
   const [visibleText, setVisibleText] = useState('');
@@ -36,7 +36,6 @@ const Title = () => {
       const typingTimeout = setTimeout(() => {
         setVisibleText(initialText.substring(0, currentIndex - 1));
         setCurrentIndex(currentIndex - 1);
-        console.log(currentIndex);
       }, deleteSpeedMs);
 
       if (currentIndex === 0) {
