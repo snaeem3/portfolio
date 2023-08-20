@@ -22,7 +22,7 @@ const Projects = () => {
     const observerOptions = {
       root: null, // null uses the view port
       rootMargin: '0px',
-      // threshold: 0.05,
+      threshold: 0.1,
     };
 
     newLiElements.forEach((li) => {

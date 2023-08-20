@@ -264,10 +264,18 @@ section {
 
 .about-content {
   padding: var(--section-padding) 0;
+  display: grid;
+  gap: 0.5rem;
 }
 
-.about-content p {
+.about-text,
+.contact-status {
   margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .skills-container {
@@ -328,8 +336,13 @@ section {
 
 .link-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
+}
+
+.link-container button {
+  padding: 1rem 2rem;
 }
 
 .project .screenshot {
@@ -362,10 +375,20 @@ button[type="submit"]::after {
   background-image: url(/src/assets/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg);
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-icons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 2rem;
+  border-radius: var(--border-radius-default);
+  width: fit-content;
+  padding: var(--section-padding);
 }
 
 .contact-status {
@@ -379,6 +402,10 @@ button[type="submit"]::after {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .contact-form button {
@@ -412,11 +439,27 @@ button[type="submit"]::after {
   .project {
     height: 100%;
   }
+
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Contact {
+    display: grid;
+    justify-items: center;
+  }
+
+  .contact-content {
+    width: 67%;
+  }
 }
 
 @media (min-width: 1480px) {
   main {
     width: 70%;
     justify-self: center;
+  }
+  .link-container {
+    flex-direction: row;
   }
 }
