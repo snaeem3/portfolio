@@ -69,6 +69,10 @@ button:not(:disabled):hover {
   max-width: 100%;
 }
 
+.icon:hover {
+  transform: scale(1.2);
+}
+
 .supporting-icon::after {
   content: "";
   background-repeat: no-repeat;

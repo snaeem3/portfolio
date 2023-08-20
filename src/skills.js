@@ -21,9 +21,9 @@ export const skills = [
   },
   //   { name: 'React Native' },
   {
-    name: 'Git',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-    category: 'Misc.',
+    name: 'Firebase',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+    category: 'Back-End',
   },
   {
     name: 'Jest',
@@ -36,9 +36,9 @@ export const skills = [
     category: 'Misc.',
   },
   {
-    name: 'Firebase',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
-    category: 'Back-End',
+    name: 'Git',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    category: 'Misc.',
   },
   {
     name: 'Python',
