@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Live View](https://snaeem3.github.io/portfolio)
 
-## Available Scripts
+This is a personal portfolio website of my software projects.
 
-In the project directory, you can run:
+## Skills involved with this project:
 
-### `npm start`
+- ReactJS & Javascript
+  - [IntersectionObserver API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to create effects when objects enter the viewport
+  - React functional components
+  - React Hooks
+    - `useState`
+    - `useEffect`
+    - `useRef`
+  - React props to pass data and functions between components
+  - Rendering JSX code using React
+  - DOM manipulation
+  - Event handling (`showAllProjects`) to perform actions based on user interactions.
+- CSS
+  - Responsive design for portrait/landscape screens using media queries
+  - Transition effects
+  - Keyframe animations
+  - CSS Grid
+  - CSS Flex
+  - Sidebar menu
+  - Hover effects
+  - Blur effects
+  - .svg icons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To set up this project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository to your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone git@github.com:snaeem3/portfolio.git
+```
 
-### `npm run build`
+2. Change to the project directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+cd portfolio
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the project dependencies using npm or yarn.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+# or
+yarn install
+```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can use the following npm scripts to work with this project:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start`: Starts the development server.
+- `npm run build`: Builds the production-ready code.
+- `npm test`: Runs tests using Jest.
+- `npm run eject`: Ejects from Create React App configuration.
+- `npm run lint`: Lints the code using ESLint.
+- `npm run lint:fix`: Automatically fixes ESLint errors when possible.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Development Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project uses several development dependencies, including ESLint, Prettier, and TypeScript. You can find more information about them in the `devDependencies` section of the package.json file.
