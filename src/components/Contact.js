@@ -39,7 +39,7 @@ const Contact = () => (
         target="_blank"
         action="https://formsubmit.co/sameer4363@gmail.com"
         method="POST"
-        className="contact-form"
+        className="contact-form box-shadow"
       >
         <div className="form-group">
           <div className="form-row">

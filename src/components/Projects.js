@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { projects } from '../projectData';
 import githubLogo from '../assets/iconmonstr-github-1.svg';
 
@@ -18,7 +19,7 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    const newLiElements = liRef.current.slice(liRef.current.length - 3); // Assuming 3 is the initial count
+    const newLiElements = liRef.current.slice(liRef.current.length - 4); // Assuming 3 is the initial count
     const observerOptions = {
       root: null, // null uses the view port
       rootMargin: '0px',
@@ -39,9 +40,13 @@ const Projects = () => {
       <h2 className="section-header">Projects</h2>
       <ul>
         {projects
-          .slice(0, showAllProjects ? undefined : 3)
+          .slice(0, showAllProjects ? undefined : 4)
           .map((project, index) => (
-            <li ref={(el) => liRef.current.push(el)} className="hidden">
+            <li
+              // key={uuidv4()}
+              ref={(el) => liRef.current.push(el)}
+              className="hidden"
+            >
               <Project
                 name={project.name}
                 description={project.description}
