@@ -4,6 +4,7 @@ import battleshipScreenshot from './assets/screenshots/battleship-screenshot.png
 import cvScreenshot from './assets/screenshots/cv-screenshot.png';
 import memoryGameScreenshot from './assets/screenshots/memory-game-screenshot.png';
 import tennisLauncherScreenshot from './assets/screenshots/ball launcher.jpg';
+import weatherAppScreenshot from './assets/screenshots/weather-app-screenshot.png';
 import toDoListScreenshot from './assets/screenshots/to-do-list-screenshot.png';
 import ticTacToeScreenshot from './assets/screenshots/tic-tac-toe-screenshot.png';
 
@@ -53,6 +54,14 @@ export const projects = [
     github: 'https://github.com/snaeem3/tennis-ball-launcher',
     live: 'https://youtu.be/vrVyTNxIxno',
     screenshotSrc: tennisLauncherScreenshot,
+  },
+  {
+    name: 'Weather App',
+    description:
+      'A Javascript application that displays the current weather in a user-specified location using the OpenWeather API',
+    github: 'https://github.com/snaeem3/weather-app',
+    live: 'https://snaeem3.github.io/weather-app/',
+    screenshotSrc: weatherAppScreenshot,
   },
   {
     name: 'To-do List',

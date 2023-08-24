@@ -4,7 +4,7 @@ import { projects } from '../projectData';
 import githubLogo from '../assets/iconmonstr-github-1.svg';
 
 const Projects = () => {
-  const [showAllProjects, setShowAllProjects] = useState(projects.length <= 3);
+  const [showAllProjects, setShowAllProjects] = useState(projects.length <= 4);
 
   const liRef = useRef([]);
 
@@ -19,7 +19,9 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    const newLiElements = liRef.current.slice(liRef.current.length - 4); // Assuming 3 is the initial count
+    const newLiElements = liRef.current.slice(
+      liRef.current.length - projects.length
+    );
     const observerOptions = {
       root: null, // null uses the view port
       rootMargin: '0px',
@@ -40,7 +42,7 @@ const Projects = () => {
       <h2 className="section-header">Projects</h2>
       <ul>
         {projects
-          .slice(0, showAllProjects ? undefined : 4)
+          .slice(0, !showAllProjects ? 4 : undefined)
           .map((project, index) => (
             <li
               // key={uuidv4()}

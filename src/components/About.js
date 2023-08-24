@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import { skills } from '../skills';
 
 const About = () => (
@@ -23,7 +24,7 @@ const About = () => (
         <h2 className="skills-header">Skills</h2>
         <ul className="skills-list">
           {skills.map((skill) => (
-            <li className="skill">
+            <li className="skill" key={uuidv4()}>
               <img src={skill.src} alt={skill.name} className="dev-logo" />
               <p>{skill.name}</p>
             </li>
