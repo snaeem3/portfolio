@@ -21,6 +21,16 @@ export const skills = [
   },
   //   { name: 'React Native' },
   {
+    name: 'NodeJS',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    category: 'Back-End',
+  },
+  {
+    name: 'MongoDB',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+    category: 'Back-End',
+  },
+  {
     name: 'Firebase',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
     category: 'Back-End',

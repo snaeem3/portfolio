@@ -1,3 +1,4 @@
+import inventoryScreenshot from './assets/screenshots/inventory-screenshot.png';
 import photoTaggingScreenshot from './assets/screenshots/photo-tagging-screenshot.png';
 import shoppingCartScreenshot from './assets/screenshots/shopping-cart-screenshot.png';
 import battleshipScreenshot from './assets/screenshots/battleship-screenshot.png';
@@ -9,6 +10,14 @@ import toDoListScreenshot from './assets/screenshots/to-do-list-screenshot.png';
 import ticTacToeScreenshot from './assets/screenshots/tic-tac-toe-screenshot.png';
 
 export const projects = [
+  {
+    name: 'D&D Inventory Application',
+    description:
+      'Dungeons & Dragons Inventory App built with NodeJS & MongoDB. Keep your all your D&D items organized by creating/removing items, designating different categories, and tracking your available gold.',
+    github: 'https://github.com/snaeem3/inventory-application',
+    live: 'https://wandering-brook-1752.fly.dev/catalog',
+    screenshotSrc: inventoryScreenshot,
+  },
   {
     name: "Where's Waldo Photo Tagging App",
     description:
