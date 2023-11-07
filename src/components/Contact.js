@@ -1,3 +1,4 @@
+// import { useForm, ValidationError } from '@formspree/react';
 import githubIcon from '../assets/iconmonstr-github-1.svg';
 import emailIcon from '../assets/mail_FILL0_wght400_GRAD0_opsz48.svg';
 
@@ -37,7 +38,7 @@ const Contact = () => (
       </div>
       <form
         target="_blank"
-        action="https://formsubmit.co/sameer4363@gmail.com"
+        action="https://formspree.io/f/moqobyyw"
         method="POST"
         className="contact-form box-shadow"
       >
