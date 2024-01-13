@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Title = () => {
   const initialText = 'Mechanical Engineer';
   const pauseMs = 2500;
-  const finalText = 'Web Developer';
+  const finalText = 'Software Engineer';
   const typingSpeedMs = 125;
   const deleteSpeedMs = 50; // Lower is faster
 
