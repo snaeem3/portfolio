@@ -15,6 +15,11 @@ export const skills = [
     category: 'Front-End',
   },
   {
+    name: 'Typescript',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    category: 'Front-End',
+  },
+  {
     name: 'React',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     category: 'Front-End',
@@ -33,6 +38,11 @@ export const skills = [
   {
     name: 'Firebase',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+    category: 'Back-End',
+  },
+  {
+    name: 'DiscordJS',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg',
     category: 'Back-End',
   },
   {

@@ -1,3 +1,4 @@
+import roundtableScreenshot from './assets/screenshots/roundtable-screenshot.png';
 import inventoryScreenshot from './assets/screenshots/inventory-screenshot.png';
 import photoTaggingScreenshot from './assets/screenshots/photo-tagging-screenshot.png';
 import shoppingCartScreenshot from './assets/screenshots/shopping-cart-screenshot.png';
@@ -11,9 +12,16 @@ import ticTacToeScreenshot from './assets/screenshots/tic-tac-toe-screenshot.png
 
 export const projects = [
   {
+    name: 'Roundtable Discord Bot',
+    description:
+      'Discord Bot built with Typescript and DiscordJS. Play the board game "Roundtable Royale" with friends on your discord server. This bot will manage all the gameplay activities, actions, and scoring for all players.',
+    github: 'https://github.com/snaeem3/roundtable-discord-bot',
+    screenshotSrc: roundtableScreenshot,
+  },
+  {
     name: 'D&D Inventory Application',
     description:
-      'Dungeons & Dragons Inventory App built with NodeJS & MongoDB. Keep your all your D&D items organized by creating/removing items, designating different categories, and tracking your available gold.',
+      'Dungeons & Dragons Inventory App built with NodeJS and MongoDB. Keep your all your D&D items organized by creating/removing items, designating different categories, and tracking your available gold.',
     github: 'https://github.com/snaeem3/inventory-application',
     live: 'https://wandering-brook-1752.fly.dev/catalog',
     screenshotSrc: inventoryScreenshot,
@@ -80,12 +88,12 @@ export const projects = [
     live: 'https://snaeem3.github.io/To-do-list/',
     screenshotSrc: toDoListScreenshot,
   },
-  {
-    name: 'Tic-Tac-Toe',
-    description:
-      'A Javascript Tic-Tac-Toe game that can be played against another human or the computer',
-    github: 'https://github.com/snaeem3/tic-tac-toe',
-    live: 'https://snaeem3.github.io/tic-tac-toe/',
-    screenshotSrc: ticTacToeScreenshot,
-  },
+  // {
+  //   name: 'Tic-Tac-Toe',
+  //   description:
+  //     'A Javascript Tic-Tac-Toe game that can be played against another human or the computer',
+  //   github: 'https://github.com/snaeem3/tic-tac-toe',
+  //   live: 'https://snaeem3.github.io/tic-tac-toe/',
+  //   screenshotSrc: ticTacToeScreenshot,
+  // },
 ];

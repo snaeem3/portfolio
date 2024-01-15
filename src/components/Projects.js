@@ -82,11 +82,13 @@ const Project = (props) => {
         <img src={screenshotSrc} alt={name} className="screenshot" />
         <p>{description}</p>
         <div className="link-container">
-          <a href={live} target="_blank" rel="noopener noreferrer">
-            <button type="button" className="live-btn icon-btn">
-              Live Demo
-            </button>
-          </a>
+          {live && (
+            <a href={live} target="_blank" rel="noopener noreferrer">
+              <button type="button" className="live-btn icon-btn">
+                Live Demo
+              </button>
+            </a>
+          )}
           <a href={github} target="_blank" rel="noopener noreferrer">
             <button type="button" className="github-btn icon-btn">
               Repository
