@@ -419,11 +419,71 @@ textarea {
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: var(--section-padding);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .col {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  position: relative;
+  border: none;
+  background: var(--secondary-color);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.form-group label {
+  position: absolute;
+  pointer-events: none;
+  top: -0.5rem;
+  transition: all 0.3s ease;
+}
+
+.col input:focus ~ label,
+.form-group textarea:focus ~ label,
+.col input:valid ~ label,
+.form-group textarea:valid ~ label {
+  transform: translateY(-1rem);
+  font-size: 0.8rem;
+  color: white;
+}
+
+.form-group input:user-invalid ~ label {
+  color: rgb(255, 0, 0);
+  transform: translateY(-1rem);
+}
+
+.form-group .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.form-group .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.form-group input:focus ~ .underline:before,
+.form-group input:valid ~ .underline:before,
+.form-group textarea:focus ~ .underline:before,
+.form-group textarea:valid ~ .underline:before {
+  transform: scale(1);
 }
 
 .App > a {
@@ -455,6 +515,11 @@ textarea {
 
   .contact-content {
     width: 67%;
+  }
+
+  .form-row {
+    flex-direction: row;
+    gap: 0.25rem;
   }
 }
 

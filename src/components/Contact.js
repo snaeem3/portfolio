@@ -32,8 +32,8 @@ const Contact = () => (
         </ul>
         <div className="contact-status">
           I am currently seeking a position as either a front end, back end, or
-          full stack web developer. If you're interested in learning more about
-          either me or my projects, feel free to reach out to me below!
+          full stack software developer. If you're interested in learning more
+          about either me or my projects, feel free to reach out to me below!
         </div>
       </div>
       <form
@@ -45,39 +45,44 @@ const Contact = () => (
         <div className="form-group">
           <div className="form-row">
             <div className="col">
-              <label htmlFor="name">Name:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 className="form-control"
-                placeholder="Full Name"
+                // placeholder="Full Name"
                 required
               />
+              <div className="underline" />
+              <label htmlFor="name">Name:</label>
             </div>
             <div className="col">
-              <label htmlFor="email">Email:</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 className="form-control"
-                placeholder="Email Address"
+                // placeholder="Email Address"
                 required
               />
+              <div className="underline" />
+              <label htmlFor="email">Email:</label>
             </div>
           </div>
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            placeholder="Your Message"
-            className="form-control"
-            name="message"
-            rows="10"
-            required
-          />
+          <div className="col">
+            <textarea
+              id="message"
+              // placeholder="Your Message"
+              className="form-control"
+              name="message"
+              rows="10"
+              required
+            />
+            <div className="underline" />
+            <label htmlFor="message">Message:</label>
+          </div>
         </div>
         <button type="submit" className="icon-btn">
           Submit
