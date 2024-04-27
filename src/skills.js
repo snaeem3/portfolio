@@ -66,6 +66,11 @@ export const skills = [
     category: 'Back-End',
   },
   {
+    name: 'Material UI',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg',
+    category: 'Front-End',
+  },
+  {
     name: 'MATLAB',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg',
     category: 'Misc.',

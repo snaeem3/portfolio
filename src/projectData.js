@@ -1,3 +1,4 @@
+import inventoryFullStackScreenshot from './assets/screenshots/inventory-client-screenshot.jpeg';
 import roundtableScreenshot from './assets/screenshots/roundtable-screenshot.png';
 import inventoryScreenshot from './assets/screenshots/inventory-screenshot.png';
 import photoTaggingScreenshot from './assets/screenshots/photo-tagging-screenshot.png';
@@ -12,19 +13,19 @@ import ticTacToeScreenshot from './assets/screenshots/tic-tac-toe-screenshot.png
 
 export const projects = [
   {
+    name: 'D&D Social Inventory App',
+    description:
+      'Fullstack MERN app for D&D players to create items, manage their inventory, and track gold.',
+    github: 'https://github.com/snaeem3/inventory-client',
+    live: 'https://inventory-client-plum.vercel.app/',
+    screenshotSrc: inventoryFullStackScreenshot,
+  },
+  {
     name: 'Roundtable Discord Bot',
     description:
       'Discord Bot built with Typescript and DiscordJS. Play the board game "Roundtable Royale" with friends on your discord server. This bot will manage all the gameplay activities, actions, and scoring for all players.',
     github: 'https://github.com/snaeem3/roundtable-discord-bot',
     screenshotSrc: roundtableScreenshot,
-  },
-  {
-    name: 'D&D Inventory Application',
-    description:
-      'Dungeons & Dragons Inventory App built with NodeJS and MongoDB. Keep your all your D&D items organized by creating/removing items, designating different categories, and tracking your available gold.',
-    github: 'https://github.com/snaeem3/inventory-application',
-    live: 'https://wandering-brook-1752.fly.dev/catalog',
-    screenshotSrc: inventoryScreenshot,
   },
   {
     name: "Where's Waldo Photo Tagging App",
@@ -33,6 +34,14 @@ export const projects = [
     github: 'https://github.com/snaeem3/photo-tagging-app',
     live: 'https://snaeem3.github.io/photo-tagging-app/',
     screenshotSrc: photoTaggingScreenshot,
+  },
+  {
+    name: 'D&D Inventory Application',
+    description:
+      'Backend D&D Inventory App built with NodeJS and MongoDB. Keep your all your D&D items organized by creating/removing items, designating different categories, and tracking your available gold.',
+    github: 'https://github.com/snaeem3/inventory-application',
+    live: 'https://wandering-brook-1752.fly.dev/catalog',
+    screenshotSrc: inventoryScreenshot,
   },
   {
     name: 'Shopping Cart',

@@ -8,31 +8,26 @@ const Projects = () => {
 
   const liRef = useRef([]);
 
-  const handleIntersection = (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-      } else {
-        // entry.target.classList.remove('in-view');
-      }
-    });
-  };
-
   useEffect(() => {
     const newLiElements = liRef.current.slice(
       liRef.current.length - projects.length
     );
     const observerOptions = {
       root: null, // null uses the view port
-      rootMargin: '0px',
-      threshold: 0.1,
+      rootMargin: '0px', // makes the container bigger or smaller
+      threshold: 0.25, // % of the element that needs to be visible
     };
 
     newLiElements.forEach((li) => {
-      const observer = new IntersectionObserver(
-        handleIntersection,
-        observerOptions
-      );
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            entry.target.classList.remove('hidden');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
       observer.observe(li);
     });
   }, [liRef.current.length]);
@@ -40,22 +35,24 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2 className="section-header">Projects</h2>
-      <ul>
+      <ul className="overflow-x-hidden">
         {projects
           .slice(0, !showAllProjects ? 4 : undefined)
           .map((project, index) => (
             <li
-              // key={uuidv4()}
+              key={index}
               ref={(el) => liRef.current.push(el)}
               className="hidden"
             >
-              <Project
-                name={project.name}
-                description={project.description}
-                github={project.github}
-                live={project.live}
-                screenshotSrc={project.screenshotSrc}
-              />
+              <div className="project-wrapper">
+                <Project
+                  name={project.name}
+                  description={project.description}
+                  github={project.github}
+                  live={project.live}
+                  screenshotSrc={project.screenshotSrc}
+                />
+              </div>
             </li>
           ))}
       </ul>

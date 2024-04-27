@@ -9,7 +9,7 @@ const About = () => (
         <p>
           I'm a versatile engineer based in the United States. I've cultivated
           problem-solving skills since 2014 through various programming and
-          mechanical engineering projects. My journey began with Matlab and has
+          mechanical engineering projects. My journey began with MATLAB and has
           evolved into <strong>software development</strong> and beyond.
         </p>
         <p>

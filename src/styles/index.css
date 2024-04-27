@@ -13,6 +13,7 @@
 
 html {
   /* font-size: 18px; */
+  scroll-behavior: smooth;
 }
 
 *,
@@ -101,23 +102,8 @@ button:not(:disabled):hover {
   align-items: center;
 }
 
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.hidden:nth-child(even) {
-  transform: translateX(100%);
-}
-
-.show,
-.in-view,
-.in-view:nth-child(even) {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .sticky-element {
@@ -228,7 +214,7 @@ section {
 
 .section-header {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .title-container {
@@ -318,6 +304,31 @@ section {
   gap: 1rem;
 }
 
+.project-wrapper,
+.project {
+  height: 100%;
+}
+
+.project-wrapper {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.hidden:nth-child(odd) > .project-wrapper {
+  transform: translateX(-100%);
+}
+
+.hidden:nth-child(even) > .project-wrapper {
+  transform: translateX(100%);
+}
+
+.in-view > .project-wrapper {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .project {
   width: 100%;
   border: solid 2px var(--primary-color);
@@ -325,10 +336,11 @@ section {
   padding: var(--section-padding);
   text-align: center;
   display: grid;
+  gap: 1rem;
 }
 
 .project h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .project-content {
@@ -352,6 +364,7 @@ section {
 .project .screenshot {
   width: 100%;
   object-fit: contain;
+  border-radius: 0.5rem;
 }
 
 .show-more-btn {
@@ -498,10 +511,6 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); */
     gap: 1rem;
-  }
-
-  .project {
-    height: 100%;
   }
 
   .about-content {
