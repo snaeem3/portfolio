@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c63fe9e9.css",
-    "main.js": "/portfolio/static/js/main.442b1f82.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio/static/css/main.2c174bd9.css",
+    "main.js": "/portfolio/static/js/main.dd936382.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/photo-tagging-screenshot.png": "/portfolio/static/media/photo-tagging-screenshot.b4906e5efeec898e3d8f.png",
     "static/media/shopping-cart-screenshot.png": "/portfolio/static/media/shopping-cart-screenshot.57ca322c88c963e3189c.png",
     "static/media/to-do-list-screenshot.png": "/portfolio/static/media/to-do-list-screenshot.447fb2d9bbff826c6984.png",
     "static/media/inventory-screenshot.png": "/portfolio/static/media/inventory-screenshot.e47d52f7378c365bb076.png",
     "static/media/ball launcher.jpg": "/portfolio/static/media/ball launcher.b41c3195b3fd8a556a27.jpg",
     "static/media/tic-tac-toe-screenshot.png": "/portfolio/static/media/tic-tac-toe-screenshot.3fbcc38112aae8537b73.png",
+    "static/media/inventory-client-screenshot.jpeg": "/portfolio/static/media/inventory-client-screenshot.ba2c0a43e4ded2ae6600.jpeg",
     "static/media/memory-game-screenshot.png": "/portfolio/static/media/memory-game-screenshot.05e1cf6fbc8447a6ba95.png",
     "static/media/battleship-screenshot.png": "/portfolio/static/media/battleship-screenshot.42fafa437d454c844aaa.png",
     "static/media/cv-screenshot.png": "/portfolio/static/media/cv-screenshot.3906a4d70ca5f53a423d.png",
@@ -22,12 +23,12 @@
     "static/media/send_FILL0_wght400_GRAD0_opsz48.svg": "/portfolio/static/media/send_FILL0_wght400_GRAD0_opsz48.e85d73dda5f5ca745f90.svg",
     "static/media/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg": "/portfolio/static/media/arrow_upward_FILL0_wght400_GRAD0_opsz48.9f61e74f03665193dda6.svg",
     "static/media/expand_more_FILL0_wght400_GRAD0_opsz48.svg": "/portfolio/static/media/expand_more_FILL0_wght400_GRAD0_opsz48.e67dbe243b6a40aaac93.svg",
-    "main.c63fe9e9.css.map": "/portfolio/static/css/main.c63fe9e9.css.map",
-    "main.442b1f82.js.map": "/portfolio/static/js/main.442b1f82.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.2c174bd9.css.map": "/portfolio/static/css/main.2c174bd9.css.map",
+    "main.dd936382.js.map": "/portfolio/static/js/main.dd936382.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c63fe9e9.css",
-    "static/js/main.442b1f82.js"
+    "static/css/main.2c174bd9.css",
+    "static/js/main.dd936382.js"
   ]
 }
