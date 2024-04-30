@@ -25,6 +25,7 @@ export const projects = [
     description:
       'Discord Bot built with Typescript and DiscordJS. Play the board game "Roundtable Royale" with friends on your discord server. This bot will manage all the gameplay activities, actions, and scoring for all players.',
     github: 'https://github.com/snaeem3/roundtable-discord-bot',
+    live: 'https://github.com/snaeem3/roundtable-discord-bot?tab=readme-ov-file#video-demo',
     screenshotSrc: roundtableScreenshot,
   },
   {
