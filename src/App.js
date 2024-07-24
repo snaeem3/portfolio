@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Nav from './components/Nav';
 import Title from './components/Title';
 import About from './components/About';
+import OpenSource from './components/OpenSource';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Title />
         <About />
+        <OpenSource />
         <Projects />
         {/* <Resume/> */}
         <Contact />

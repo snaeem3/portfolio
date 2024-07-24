@@ -36,6 +36,16 @@ export const skills = [
     category: 'Back-End',
   },
   {
+    name: 'Django',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg',
+    category: 'Back-end',
+  },
+  {
+    name: 'PostgreSQL',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+    category: 'Back-end',
+  },
+  {
     name: 'Firebase',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
     category: 'Back-End',

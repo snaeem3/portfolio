@@ -5,6 +5,9 @@ const Nav = () => (
         <a href="#about">About</a>
       </li>
       <li>
+        <a href="#open-source">Open Source Contributions</a>
+      </li>
+      <li>
         <a href="#projects">Projects</a>
       </li>
       <li>

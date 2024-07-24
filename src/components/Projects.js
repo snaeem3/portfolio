@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2 className="section-header">Projects</h2>
-      <ul className="overflow-x-hidden">
+      <ul className="overflow-x-hidden two-column">
         {projects
           .slice(0, !showAllProjects ? 4 : undefined)
           .map((project, index) => (
