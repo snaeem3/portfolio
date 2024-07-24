@@ -54,6 +54,7 @@ const OpenSource = () => {
                   pullRequests={project.pullRequests}
                   live={project.live}
                   screenshotSrc={project.screenshotSrc}
+                  techStack={project.techStack}
                 />
               </div>
             </li>
@@ -81,6 +82,7 @@ const OpenSourceProject = (props) => {
     pullRequests,
     live,
     screenshotSrc,
+    techStack,
   } = props;
 
   return (
@@ -90,14 +92,27 @@ const OpenSourceProject = (props) => {
       </h3>
       <div className="project-content">
         <div className="project-main-content two-column grid">
-          <img src={screenshotSrc} alt={name} className="screenshot" />
-          <div className="open-source-text-content">
-            <p className="description">
-              <strong>Project Description:</strong> {description}
-            </p>
-            <p className="contribution-description">
-              <strong>My Contributions:</strong> {contributionDescription}
-            </p>
+          <img
+            src={screenshotSrc}
+            alt={name}
+            className="screenshot box-shadow"
+          />
+          <div className="open-source-info">
+            <div className="open-source-text-content">
+              <p className="description">
+                <strong>Project Description:</strong> {description}
+              </p>
+              <p className="contribution-description">
+                <strong>My Contributions:</strong> {contributionDescription}
+              </p>
+            </div>
+            <ul className="project-tech-stack">
+              {techStack.map((techName, index) => (
+                <li key={index} className="tech-bubble">
+                  {techName}
+                </li>
+              ))}
+            </ul>
             <div className="link-container">
               {live && (
                 <a href={live} target="_blank" rel="noopener noreferrer">

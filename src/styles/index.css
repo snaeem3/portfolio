@@ -5,6 +5,7 @@
   --section-margin: 1rem;
   --border-radius-default: 0.75rem;
   --primary-color: #2c3e50;
+  --primary-color-semi-transparent: #2c3e5050;
   --primary-color-dark: #1c2833;
   --secondary-color: #3498db;
   --shade-color: #494949da;
@@ -301,7 +302,7 @@ section {
   gap: 1rem;
 }
 
-.projects ul {
+.projects > ul {
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;
@@ -335,7 +336,7 @@ section {
 
 .project {
   width: 100%;
-  border: solid 2px var(--primary-color);
+  border: solid 2px var(--primary-color-semi-transparent);
   border-radius: var(--border-radius-default);
   padding: var(--section-padding);
   text-align: center;
@@ -373,12 +374,37 @@ section {
   border-radius: 0.5rem;
 }
 
-.open-source-text-content {
+.open-source-info {
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
+}
+
+.open-source-text-content {
+  background-color: #efe3ffb6;
+  border-radius: var(--border-radius-default);
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.project-tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tech-bubble {
+  padding: 1rem;
+  color: white;
+  background-color: #5f05dd;
+  max-width: fit-content;
+  border-radius: 4rem;
+  border: solid 1px black;
 }
 
 .show-more-btn {
@@ -524,7 +550,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 
-  .projects ul {
+  .projects > ul {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); */
     gap: 1rem;
