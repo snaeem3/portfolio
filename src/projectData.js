@@ -17,7 +17,7 @@ export const projects = [
   {
     name: 'McMaster Smart',
     description:
-      'Chrome extension to find cheaper alternatives to McMaster Carr product. Built with Vue & Typescript.',
+      'Chrome extension to find cheaper alternatives to McMaster Carr products. Built with Vue & Typescript.',
     github: 'https://github.com/snaeem3/mcmaster-smart',
     screenshotSrc: mcmasterSmartScreenshot,
   },
