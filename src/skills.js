@@ -24,7 +24,11 @@ export const skills = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     category: 'Front-End',
   },
-  //   { name: 'React Native' },
+  {
+    name: 'Vue',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+    category: 'Front-End',
+  },
   {
     name: 'NodeJS',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',

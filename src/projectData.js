@@ -1,3 +1,5 @@
+import mcmasterSmartScreenshot from './assets/screenshots/mcmaster-smart-screenshot.PNG';
+import mcmasterSmartLiteScreenshot from './assets/screenshots/mcmaster-smart-lite-screenshot.PNG';
 import inventoryFullStackScreenshot from './assets/screenshots/inventory-client-screenshot.jpeg';
 import roundtableScreenshot from './assets/screenshots/roundtable-screenshot.png';
 import inventoryScreenshot from './assets/screenshots/inventory-screenshot.png';
@@ -12,6 +14,20 @@ import toDoListScreenshot from './assets/screenshots/to-do-list-screenshot.png';
 import ticTacToeScreenshot from './assets/screenshots/tic-tac-toe-screenshot.png';
 
 export const projects = [
+  {
+    name: 'McMaster Smart',
+    description:
+      'Chrome extension to find cheaper alternatives to McMaster Carr product. Built with Vue & Typescript.',
+    github: 'https://github.com/snaeem3/mcmaster-smart',
+    screenshotSrc: mcmasterSmartScreenshot,
+  },
+  {
+    name: 'McMaster Smart Lite',
+    description:
+      'Lightweight, one-click interface chrome extension to find cheaper alternatives to McMaster Carr products. Built with Typescript.',
+    github: 'https://github.com/snaeem3/mcmaster-smart-lite',
+    screenshotSrc: mcmasterSmartLiteScreenshot,
+  },
   {
     name: 'D&D Social Inventory App',
     description:
