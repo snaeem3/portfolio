@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8fe8d764.css",
-    "main.js": "/portfolio/static/js/main.8dc25698.js",
+    "main.js": "/portfolio/static/js/main.b874d34a.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/photo-tagging-screenshot.png": "/portfolio/static/media/photo-tagging-screenshot.b4906e5efeec898e3d8f.png",
     "static/media/shopping-cart-screenshot.png": "/portfolio/static/media/shopping-cart-screenshot.57ca322c88c963e3189c.png",
@@ -9,6 +9,7 @@
     "static/media/to-do-list-screenshot.png": "/portfolio/static/media/to-do-list-screenshot.447fb2d9bbff826c6984.png",
     "static/media/inventory-screenshot.png": "/portfolio/static/media/inventory-screenshot.e47d52f7378c365bb076.png",
     "static/media/ball launcher.jpg": "/portfolio/static/media/ball launcher.b41c3195b3fd8a556a27.jpg",
+    "static/media/mcmaster-smart-screenshot.PNG": "/portfolio/static/media/mcmaster-smart-screenshot.08e785e3ee583081aa1e.PNG",
     "static/media/tic-tac-toe-screenshot.png": "/portfolio/static/media/tic-tac-toe-screenshot.3fbcc38112aae8537b73.png",
     "static/media/inventory-client-screenshot.jpeg": "/portfolio/static/media/inventory-client-screenshot.ba2c0a43e4ded2ae6600.jpeg",
     "static/media/memory-game-screenshot.png": "/portfolio/static/media/memory-game-screenshot.05e1cf6fbc8447a6ba95.png",
@@ -16,6 +17,7 @@
     "static/media/cv-screenshot.png": "/portfolio/static/media/cv-screenshot.3906a4d70ca5f53a423d.png",
     "static/media/roundtable-screenshot.png": "/portfolio/static/media/roundtable-screenshot.f89fc4353214283f7698.png",
     "static/media/weather-app-screenshot.png": "/portfolio/static/media/weather-app-screenshot.50d16aa9d046ff4ce366.png",
+    "static/media/mcmaster-smart-lite-screenshot.PNG": "/portfolio/static/media/mcmaster-smart-lite-screenshot.9aec57229975259c9798.PNG",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
     "static/media/iconmonstr-github-1.svg": "/portfolio/static/media/iconmonstr-github-1.efdb67a0cd1b4c9d6ae717ce9e46f0e8.svg",
@@ -25,11 +27,11 @@
     "static/media/expand_more_FILL0_wght400_GRAD0_opsz48.svg": "/portfolio/static/media/expand_more_FILL0_wght400_GRAD0_opsz48.27705ecbdeb6caa0bb07.svg",
     "static/media/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg": "/portfolio/static/media/arrow_upward_FILL0_wght400_GRAD0_opsz48.9f61e74f03665193dda6.svg",
     "main.8fe8d764.css.map": "/portfolio/static/css/main.8fe8d764.css.map",
-    "main.8dc25698.js.map": "/portfolio/static/js/main.8dc25698.js.map",
+    "main.b874d34a.js.map": "/portfolio/static/js/main.b874d34a.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fe8d764.css",
-    "static/js/main.8dc25698.js"
+    "static/js/main.b874d34a.js"
   ]
 }
