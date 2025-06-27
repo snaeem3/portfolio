@@ -17,7 +17,7 @@ export const projects = [
   {
     name: 'McMaster Smart',
     description:
-      'Chrome extension to find cheaper alternatives to McMaster Carr products. Built with Vue & Typescript.',
+      'Web extension to find cheaper alternatives to McMaster Carr products. Built with Vue & Typescript.',
     github: 'https://github.com/snaeem3/mcmaster-smart',
     screenshotSrc: mcmasterSmartScreenshot,
   },
@@ -26,6 +26,7 @@ export const projects = [
     description:
       'Lightweight, one-click interface chrome extension to find cheaper alternatives to McMaster Carr products. Built with Typescript.',
     github: 'https://github.com/snaeem3/mcmaster-smart-lite',
+    live: 'https://chromewebstore.google.com/detail/mcmaster-smart-lite/nmlkcbnplhaffhooaioodjlghepdlopk?authuser=0&hl=en',
     screenshotSrc: mcmasterSmartLiteScreenshot,
   },
   {
